@@ -1,102 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arun Kumar A - Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-    }
-    .container {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .profile-picture {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      border-radius: 50%;
-      border: 2px solid #ccc;
-    }
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
-    .summary {
-      margin-bottom: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-    .skills, .experience {
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    .skills ul, .experience ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .skills li, .experience li {
-      margin-bottom: 5px;
-    }
-    .experience h4 {
-      color: #007bff;
-    }
-    .experience p {
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Kumar A - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <img class="profile-picture" src="placeholder.png" alt="Arun Kumar A">
-    <div class="content">
-      <h2 class="summary">Arun Kumar A</h2>
-      <p class="summary">Determined, energetic and diligent professional with over 6 years of experience in Linux system administration and AWS Cloud services and sql database administration seeking an opportunity to utilize my talents in a professional capacity, employing comprehensive knowledge and vast professional experience.</p>
-      <h3 class="skills">Skills</h3>
-      <ul class="skills">
-        <li>OS: Red Hat 7, 8, Cent OS 8</li>
-        <li>Scripting: Python (basic)</li>
-        <li>Web: Apache, Apache Tomcat</li>
-        <li>Automation: Ansible (basic)</li>
-        <li>Networking: DNS, TCP/IP, DHCP, NFS, SSH, SAMBA, LDAP</li>
-        <li>Security: firewalld</li>
-        <li>Monitoring: AWS Cloudwatch</li>
-        <li>Troubleshooting: ping, tcpdump, telnet, netstat, traceroute</li>
-        <li>Virtualization: VMWare Web Client</li>
-        <li>AWS: S3, IAM, EC2, Route53, VPC, SNS, ELB, Cloudwatch, Auto Scaling</li>
-        <li>Database systems: SQL Server 2000/2005/2008/2008r2/2012/2014/2016</li>
-        <li>Certification: RHCSA -EX200, AWS Solution Architect</li>
-      </ul>
-      <h3 class="experience">Experience</h3>
-      <ul class="experience">
-        <li>
-          <h4>System Administrator (May 2019 - Current)</h4>
-          <p>FISERV INDIA PVT LTD – Bangalore, India</p>
-          <ul>
-            <li>Manage Amazon Web Services - ELB, EC2, S3, RDS, SNS, Cloudwatch</li>
-            <li>Expertise in architecting secure VPC solutions in AWS...</li>
-            </ul>
-        </li>
-        <li>
-          <h4>Database Administrator (Dec 2014 - May 2019)</h4>
-          <p>LUCID IT SOLUTIONS Pvt Ltd - Bangalore, India</p>
-          <ul>
-            <li>Possess good knowledge of SQL Server 2000/2005/2008/2012/2014/2016.</li>
-            <li>Creating technical specifications for the module...</li>
-            </ul>
-        </li>
-      </ul>
-      <p><b>Languages:</b> English - Fluent, Tamil - Fluent, Hindi - Moderate</p>
+    <div class="container">
+        <div class="sidebar">
+            <img src="photo.jpg" alt="Arun Kumar" class="profile-pic">
+        </div>
+        <div class="content">
+            <h1>Arun Kumar A</h1>
+            <p><strong>Email:</strong> arunkumarakr03@gmail.com</p>
+            <p><strong>Phone:</strong> +91 71 569560370</p>
+
+            <section>
+                <h2>Summary</h2>
+                <p>Determined, energetic and diligent professional with over 6 years of experience in Linux system administration, AWS Cloud services, and SQL database administration seeking an opportunity to utilize my talents in a professional capacity, employing comprehensive knowledge and vast professional experience.</p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>OS:</strong> Red Hat 7, 8; CentOS 8</li>
+                    <li><strong>Scripting:</strong> Python (basic)</li>
+                    <li><strong>Web:</strong> Apache, Apache Tomcat</li>
+                    <li><strong>Automation:</strong> Ansible (basic)</li>
+                    <li><strong>Networking:</strong> DNS, TCP/IP, DHCP, NFS, SSH, SAMBA, LDAP</li>
+                    <li><strong>Security:</strong> firewalld</li>
+                    <li><strong>Monitoring:</strong> AWS Cloudwatch</li>
+                    <li><strong>Virtualization:</strong> VMware Web Client</li>
+                    <li><strong>AWS:</strong> S3, IAM, EC2, Route53, VPC, SNS, ELB, Cloudwatch, Auto Scaling</li>
+                    <li><strong>Database:</strong> SQL Server 2000-2016</li>
+                    <li><strong>Certifications:</strong> RHCSA - EX200, AWS Solutions Architect</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <h3>System Administrator</h3>
+                <p><strong>FISERV INDIA PVT LTD</strong> (May 2019 - Current)</p>
+                <ul>
+                    <li>Manage Amazon Web Services - ELB, EC2, S3, RDS, SNS, Cloudwatch</li>
+                    <li>Architect secure VPC solutions in AWS with Network ACLs, security groups</li>
+                    <li>Manage IAM policies, user roles, and rules for role-based access to AWS</li>
+                    <li>Write basic Ansible scripts for LAMP stack installation</li>
+                    <li>Perform daily monitoring, backups, and server maintenance</li>
+                    <li>Install Red Hat Linux and apply security policies</li>
+                </ul>
+
+                <h3>Database Administrator</h3>
+                <p><strong>LUCID IT SOLUTIONS Pvt Ltd</strong> (Dec 2014 - May 2019)</p>
+                <ul>
+                    <li>Manage SQL Server databases, backups, and permissions</li>
+                    <li>Create and troubleshoot SQL Server agent jobs</li>
+                    <li>Implement log shipping and perform performance testing</li>
+                    <li>Configure users and manage security issues</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <p>English: Fluent</p>
+                <p>Tamil: Fluent</p>
+                <p>Hindi: Moderate</p>
+            </section>
+        </div>
     </div>
-  </div>
 </body>
 </html>
